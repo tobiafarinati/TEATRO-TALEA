@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEATRO TALEA</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="header">
+		<div id="headerDue"> <a href="archive.html">ARCHIVE</a></div>
+		<div id="headerUno">TEATRO TALEA</div>
+		<div id="infoBox" style="display: none">				
+			Teatro Talea is an experimental theater that takes classic works and rearranges them with an electronic sound landscape. Various musicians, starting with Wendy Carlos, one of the first composers to experiment with synthesizers (specifically Moog), have reinterpreted classical music works in an electronic key. Thus,  Teatro Talea do the same with theatrical works, sound effects, and their soundtracks. In addition to the actors, Teatro Talea as an orchestra consisting solely of electronic instruments that interpret the scene on a musical level.
+		</div>
+		<div id="headerQuat"><a href="https://www.instagram.com/teatro_talea/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank">IG</a></div>
+	</div>
+
+	<div id="main">
+	<!-- inizio -->
+	<div class="title">THE GLASS MENAGERIE <span>W. G. Moog Ensemble</span></div>
+	<div style="display: none" class="cnt">
+		<div class="txts">
+			<p class="names">10 June<br>8:30 P.M.</p>
+			<p class="abstract">The Glass Menagerie is a play by Tennessee Williams about a family’s struggles in St. Louis during the 1930s. It explo- res themes of family, memory,and the search for meaning.</p>
+			<p class="abstract1" style="margin-left: 100px;">The Will Gregory Moog Ensemble draws on a pool of players, and usually appears with between 6 and 10 performers, depending on the music. The current lineup comprises Will Gregory, Adrian Utley, Simon Haram, Dan Moore, Graham Fitkin, Ruth Wall, Vyv Hope-Scott, Eddie Parker, Ross Hughes and Ward.</p>
+		</div>
+	</div>
+	<!-- fine -->
+
+	<!-- inizio -->
+	<div class="title">WAITING FOR GODOT<span>Christian Dallacher</span></div>
+	<div style="display: none" class="cnt">
+		<div class="txts">
+			<p class="names">20 June<br>10:30 P.M.</p>
+			<p class="abstract">Waiting for Godot is a play by Samuel Beckett about two characters waiting for someone named Godot near a tree. It explores the theme of existentialism and the search for meaning.</p>
+			<p class="abstract1" style="margin-left: 100px;">Christian Dellacher is a musician who focuses on symphonic crossover projects with German orchestras and artists. He has arranged and directed several notable projects, including “The Flying Dutchman” and “Synth Happens”. He is the permanent arranger and musical director of the “Groove Symphony” concerts.</p>
+		</div>
+	</div>
+	<!-- fine -->	
+
+	<!-- inizio -->
+	<div class="title">KING LEAR<span>W. G. Moog Ensemble</span></div>
+	<div style="display: none" class="cnt">
+		<div class="txts">
+			<p class="names">30 June<br>8:30 P.M.</p>
+			<p class="abstract">King Lear is a Shakespearean tragedy about a king who divides his kingdom among his daughters, leading to betrayal and madness. It explores themes of power and family and is considered a masterpiece of literature.</p>
+			<p class="abstract1" style="margin-left: 100px;">The Will Gregory Moog Ensemble draws on a pool of players, and usually appears with between 6 and 10 performers, depending on the music. The current lineup comprises Will Gregory, Adrian Utley, Simon Haram, Dan Moore, Graham Fitkin, Ruth Wall, Vyv Hope-Scott, Eddie Parker, Ross Hughes and Ward.</p>
+		</div>
+	</div>
+	<!-- fine -->
+
+	<!-- inizio -->
+	<div class="title">UBU ROI<span>Wendy Carlos</span></div>
+	<div style="display: none" class="cnt">
+		<div class="txts">
+			<p class="names">10 July<br>8:30 P.M.</p>
+			<p class="abstract">Ubu Roi is a play by Alfred Jarry that follows the rise of Pa Ubu to power through violence and treachery. The play is known for its graphic content and rejection of traditional theatrical forms. It is considered a precursor to the Theatre of the Absurd movement and a classic of French literature.</p>
+			<p class="abstract1" style="margin-left: 100px;">Wendy Carlos is an American musician and composer known for her work in electronic music and synthesizer technology. Her album “Switched-On Bach” was successful, and she has composed music for films.</p>
+		</div>
+	</div>
+	<!-- fine -->
+
+	<!-- inizio -->
+	<div class="title">CYRANO DE BERGERAC <span>Wendy Carlos</span></div>
+	<div style="display: none" class="cnt">
+		<div class="txts">
+			<p class="names">20 July<br>8:30 P.M.</p>
+			<p class="abstract">Cyrano de Bergerac is a play by Edmond Rostand that tells the story of Cyrano, a skilled swordsman and poet, who is in love with his cousin Roxane but believes his large nose makes him unattractive. He helps his friend win Roxane’s love by writing love letters for him but ultimately sacrifices his own happiness for theirs. The play is known for its themes of love and self-sacrifice.</p>
+			<p class="abstract1" style="margin-left: 100px;">Wendy Carlos is an American musician and composer known for her work in electronic music and synthesizer technology. Her album “Switched-On Bach” was successful, and she has composed music for films.</p>
+		</div>
+	</div>
+	<!-- fine -->
+	</div>
+
+	<div class="footer">
+		<img class="logo" src="logo.png">
+		<p class="txtFooter">
+			Corso G. Garibaldi 82 Urbino(PU)
+			<br>info@teatrotalea.com
+			<br>0722 287400
+		</p>
+	</div>
+</body>
+
+<script>
+function toggleDocs(event) {
+	if (event.target && event.target.className == 'title') {
+    var next = event.target.nextElementSibling;
+	    if (next.style.display == "none") {
+	        next.style.display = "block";
+	    } else {
+	        next.style.display = "none";
+	    }
+	}
+}
+
+document.addEventListener('click', toggleDocs, true);
+
+function toggleInfo(event) {
+	if (event.target && event.target.id == 'headerUno') {
+    var next = event.target.nextElementSibling;
+	    if (next.style.display == "none") {
+	        next.style.display = "block";
+	    } else {
+	        next.style.display = "none";
+	    }
+	}
+}
+
+document.addEventListener('click', toggleInfo, true);
+</script>
+</html>
